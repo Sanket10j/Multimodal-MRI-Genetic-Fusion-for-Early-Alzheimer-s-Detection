@@ -2,7 +2,7 @@ As a Machine Learning Research Intern at Design Innovation Centre (DIC) - Hub GT
 <br>
 <br>
 
-Introduction:
+• Introduction:
 
 Early detection of Alzheimer’s Disease is challenging because the biomarkers are often subtle, especially in the Mild Cognitive Impairment (MCI) stage. Models trained on a single modality (only MRI or only genetics) tend to miss parts of the underlying pathology.
 
@@ -16,7 +16,7 @@ Analyze not just performance, but also modality contribution and imbalance
 <br>
 <br>
 
-Dataset:
+• Dataset:
 
 Source: Alzheimer’s Disease Neuroimaging Initiative (ADNI-1)
 
@@ -40,7 +40,7 @@ Only subjects with both MRI and genetic data available were included to ensure p
 
 <br>
 <br>
-Methodology Overview:
+• Methodology Overview:
 1. MRI Preprocessing and Feature Extraction
 
 Tools: MONAI, NiBabel
@@ -97,7 +97,7 @@ Adds an interpretability layer by exposing modality importance
 
 <br>
 <br>
-Results and Observations:
+• Results and Observations:
 
 Overall classification performance on ADNI-1 remained poor, especially for early-stage detection. This is likely due to:
 
@@ -119,7 +119,7 @@ Rather than focusing only on accuracy, this project emphasizes comparative modal
 
 <br>
 <br>
-Future Work:
+• Future Work:
 
 Planned extensions include:
 
@@ -131,7 +131,7 @@ Improving robustness through better preprocessing and larger cohorts
 
 <br>
 <br>
-References:
+• References:
 
 Chen, S., et al. (2019). Med3D: Transfer Learning for 3D Medical Image Analysis.
 
