@@ -41,6 +41,7 @@ Only subjects with both MRI and genetic data available were included to ensure p
 <br>
 <br>
 • Methodology Overview:
+<br>
 1. MRI Preprocessing and Feature Extraction
 
 Tools: MONAI, NiBabel
