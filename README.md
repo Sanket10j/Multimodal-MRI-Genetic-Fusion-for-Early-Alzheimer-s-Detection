@@ -1,5 +1,6 @@
 As a Machine Learning Research Intern at Design Innovation Centre (DIC) - Hub GTU, I have done a research project titled: 'Multimodal Alzheimer’s disease Classification Using MRI and Genetic Data' under the guidance of Dr.Neelesh Sharma, IIT Gandhinagar.
-
+<br>
+<br>
 
 Introduction:
 
@@ -12,8 +13,8 @@ Study how structural brain changes (MRI) and genetic variations (SNPs) complemen
 Evaluate whether multimodal fusion provides more reliable signals than single-modality approaches
 
 Analyze not just performance, but also modality contribution and imbalance
-
-
+<br>
+<br>
 
 Dataset:
 
@@ -37,8 +38,8 @@ Alzheimer’s Disease (AD)
 
 Only subjects with both MRI and genetic data available were included to ensure proper multimodal alignment.
 
-
-
+<br>
+<br>
 Methodology Overview:
 1. MRI Preprocessing and Feature Extraction
 
@@ -94,8 +95,8 @@ Allows the model to adjust how much it relies on MRI vs genetics for different s
 
 Adds an interpretability layer by exposing modality importance
 
-
-
+<br>
+<br>
 Results and Observations:
 
 Overall classification performance on ADNI-1 remained poor, especially for early-stage detection. This is likely due to:
@@ -116,8 +117,8 @@ GMU-based fusion helped reveal modality imbalance, showing when and how each mod
 
 Rather than focusing only on accuracy, this project emphasizes comparative modality analysis and interpretability.
 
-
-
+<br>
+<br>
 Future Work:
 
 Planned extensions include:
@@ -128,8 +129,8 @@ Exploring transformer-based cross-modal attention mechanisms
 
 Improving robustness through better preprocessing and larger cohorts
 
-
-
+<br>
+<br>
 References:
 
 Chen, S., et al. (2019). Med3D: Transfer Learning for 3D Medical Image Analysis.
