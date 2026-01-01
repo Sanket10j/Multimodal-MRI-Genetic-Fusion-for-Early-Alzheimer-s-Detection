@@ -1,0 +1,180 @@
+Microsoft Windows [Version 10.0.26100.6584]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\BAPS>cd /d "D:\BAPS\Projects\mmil\ADNI_1_GWAS_Plink"
+
+D:\BAPS\Projects\mmil\ADNI_1_GWAS_Plink>"D:\plink_win\plink.exe" --version
+PLINK v1.9.0-b.7.11 64-bit (19 Aug 2025)
+
+D:\BAPS\Projects\mmil\ADNI_1_GWAS_Plink>"D:\plink_win\plink.exe" --bfile ADNI_genotypes --geno 0.5 --mind 0.2 --maf 0.01 --hwe 1e-6 --make-bed --out ADNI_qc_step1
+PLINK v1.9.0-b.7.11 64-bit (19 Aug 2025)           cog-genomics.org/plink/1.9/
+(C) 2005-2025 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ADNI_qc_step1.log.
+Options in effect:
+  --bfile ADNI_genotypes
+  --geno 0.5
+  --hwe 1e-6
+  --maf 0.01
+  --make-bed
+  --mind 0.2
+  --out ADNI_qc_step1
+
+16102 MB RAM detected; reserving 8051 MB for main workspace.
+620901 variants loaded from .bim file.
+758 people (449 males, 308 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to ADNI_qc_step1.nosex .
+0 people removed due to missing genotype data (--mind).
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 757 founders and 1 nonfounderpresent.
+Calculating allele frequencies... done.
+Warning: 809035 het. haploid genotypes present (see ADNI_qc_step1.hh ); many
+commands treat these as missing.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+Total genotyping rate is 0.949076.
+28391 variants removed due to missing genotype data (--geno).
+Warning: --hwe observation counts vary by more than 10%.  Consider using
+--geno, and/or applying different p-value thresholds to distinct subsets of
+your data.
+--hwe: 17130 variants removed due to Hardy-Weinberg exact test.
+20210 variants removed due to minor allele threshold(s)
+(--maf/--max-maf/--mac/--max-mac).
+555170 variants and 758 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to ADNI_qc_step1.bed + ADNI_qc_step1.bim + ADNI_qc_step1.fam ...
+done.
+
+D:\BAPS\Projects\mmil\ADNI_1_GWAS_Plink>"D:\plink_win\plink.exe" --bfile ADNI_qc_step1 --freq --missing --out ADNI_qc_step1_summary
+PLINK v1.9.0-b.7.11 64-bit (19 Aug 2025)           cog-genomics.org/plink/1.9/
+(C) 2005-2025 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ADNI_qc_step1_summary.log.
+Options in effect:
+  --bfile ADNI_qc_step1
+  --freq
+  --missing
+  --out ADNI_qc_step1_summary
+
+16102 MB RAM detected; reserving 8051 MB for main workspace.
+555170 variants loaded from .bim file.
+758 people (449 males, 308 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to ADNI_qc_step1_summary.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 757 founders and 1 nonfounderpresent.
+Calculating allele frequencies... done.
+Warning: 6883 het. haploid genotypes present (see ADNI_qc_step1_summary.hh );
+many commands treat these as missing.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+Total genotyping rate is 0.994743.
+--freq: Allele frequencies (founders only) written to ADNI_qc_step1_summary.frq
+.
+--missing: Sample missing data report written to ADNI_qc_step1_summary.imiss,
+and variant-based missing data report written to ADNI_qc_step1_summary.lmiss.
+
+D:\BAPS\Projects\mmil\ADNI_1_GWAS_Plink>"D:\plink_win\plink.exe" --bfile ADNI_qc_step1 --indep-pairwise 50 5 0.2 --out ADNI_prune_50_5_0.2
+PLINK v1.9.0-b.7.11 64-bit (19 Aug 2025)           cog-genomics.org/plink/1.9/
+(C) 2005-2025 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ADNI_prune_50_5_0.2.log.
+Options in effect:
+  --bfile ADNI_qc_step1
+  --indep-pairwise 50 5 0.2
+  --out ADNI_prune_50_5_0.2
+
+16102 MB RAM detected; reserving 8051 MB for main workspace.
+555170 variants loaded from .bim file.
+758 people (449 males, 308 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to ADNI_prune_50_5_0.2.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 757 founders and 1 nonfounderpresent.
+Calculating allele frequencies... done.
+Warning: 6883 het. haploid genotypes present (see ADNI_prune_50_5_0.2.hh );
+many commands treat these as missing.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+Total genotyping rate is 0.994743.
+555170 variants and 758 people pass filters and QC.
+Note: No phenotypes present.
+Pruned 33969 variants from chromosome 1, leaving 9183.
+Pruned 37170 variants from chromosome 2, leaving 8745.
+Pruned 30680 variants from chromosome 3, leaving 7581.
+Pruned 27269 variants from chromosome 4, leaving 6934.
+Pruned 27762 variants from chromosome 5, leaving 6968.
+Pruned 31544 variants from chromosome 6, leaving 7221.
+Pruned 24764 variants from chromosome 7, leaving 6169.
+Pruned 25645 variants from chromosome 8, leaving 5752.
+Pruned 21440 variants from chromosome 9, leaving 5376.
+Pruned 23571 variants from chromosome 10, leaving 6004.
+Pruned 22032 variants from chromosome 11, leaving 5480.
+Pruned 21599 variants from chromosome 12, leaving 5770.
+Pruned 16958 variants from chromosome 13, leaving 4294.
+Pruned 14662 variants from chromosome 14, leaving 3881.
+Pruned 13090 variants from chromosome 15, leaving 3680.
+Pruned 12919 variants from chromosome 16, leaving 3981.
+Pruned 11022 variants from chromosome 17, leaving 3689.
+Pruned 12961 variants from chromosome 18, leaving 3786.
+Pruned 7023 variants from chromosome 19, leaving 2886.
+Pruned 10850 variants from chromosome 20, leaving 3300.
+Pruned 6397 variants from chromosome 21, leaving 1869.
+Pruned 6450 variants from chromosome 22, leaving 2053.
+Pruned 351 variants from chromosome 23, leaving 244.
+Pruned 55 variants from chromosome 24, leaving 7.
+Pruned 5 variants from chromosome 25, leaving 33.
+Pruned 59 variants from chromosome 26, leaving 37.
+Pruning complete.  440247 of 555170 variants removed.
+Marker lists written to ADNI_prune_50_5_0.2.prune.in and
+ADNI_prune_50_5_0.2.prune.out .
+
+D:\BAPS\Projects\mmil\ADNI_1_GWAS_Plink>"D:\plink_win\plink.exe" --bfile ADNI_qc_step1 --extract ADNI_prune_50_5_0.2.prune.in --make-bed --out ADNI_qc_pruned
+PLINK v1.9.0-b.7.11 64-bit (19 Aug 2025)           cog-genomics.org/plink/1.9/
+(C) 2005-2025 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ADNI_qc_pruned.log.
+Options in effect:
+  --bfile ADNI_qc_step1
+  --extract ADNI_prune_50_5_0.2.prune.in
+  --make-bed
+  --out ADNI_qc_pruned
+
+16102 MB RAM detected; reserving 8051 MB for main workspace.
+555170 variants loaded from .bim file.
+758 people (449 males, 308 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to ADNI_qc_pruned.nosex .
+--extract: 114923 variants remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 757 founders and 1 nonfounderpresent.
+Calculating allele frequencies... done.
+Warning: 3590 het. haploid genotypes present (see ADNI_qc_pruned.hh ); many
+commands treat these as missing.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+Total genotyping rate is 0.994232.
+114923 variants and 758 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to ADNI_qc_pruned.bed + ADNI_qc_pruned.bim + ADNI_qc_pruned.fam ...
+done.
+
+D:\BAPS\Projects\mmil\ADNI_1_GWAS_Plink>"D:\plink_win\plink.exe" --bfile ADNI_qc_pruned --recode A --out ADNI_qc_pruned
+PLINK v1.9.0-b.7.11 64-bit (19 Aug 2025)           cog-genomics.org/plink/1.9/
+(C) 2005-2025 Shaun Purcell, Christopher Chang   GNU General Public License v3
+Logging to ADNI_qc_pruned.log.
+Options in effect:
+  --bfile ADNI_qc_pruned
+  --out ADNI_qc_pruned
+  --recode A
+
+16102 MB RAM detected; reserving 8051 MB for main workspace.
+114923 variants loaded from .bim file.
+758 people (449 males, 308 females, 1 ambiguous) loaded from .fam.
+Ambiguous sex ID written to ADNI_qc_pruned.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 757 founders and 1 nonfounderpresent.
+Calculating allele frequencies... done.
+Warning: 3590 het. haploid genotypes present (see ADNI_qc_pruned.hh ); many
+commands treat these as missing.
+Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
+treat these as missing.
+Total genotyping rate is 0.994232.
+114923 variants and 758 people pass filters and QC.
+Note: No phenotypes present.
+--recode A to ADNI_qc_pruned.raw ... done.
+
+D:\BAPS\Projects\mmil\ADNI_1_GWAS_Plink>
