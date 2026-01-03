@@ -110,10 +110,9 @@ High dimensionality of genetic data
 Sensitivity of models to preprocessing quality
 
 However, some patterns were observed:
-
-Genetic features provided weaker but sometimes complementary signals, particularly in MCI cases
+<br>
 <img width="1188" height="685" alt="image" src="https://github.com/user-attachments/assets/1b3adfc4-fb78-4b66-99ef-30e80ff00441" />
-
+<br>
 AD & MCI Patients (median: 0.44): Show a stronger reliance on genetic data. The model likely identifies high-risk genetic markers as primary evidence for pathology. Whereas, the normal group has  comparatively higher dependence.
 
 <br>
