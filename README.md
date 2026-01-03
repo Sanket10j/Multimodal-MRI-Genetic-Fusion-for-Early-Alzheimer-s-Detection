@@ -114,6 +114,7 @@ However, some patterns were observed:
 MRI features dominated most decisions, especially for AD cases
 
 Genetic features provided weaker but sometimes complementary signals, particularly in MCI cases
+<img width="1188" height="685" alt="image" src="https://github.com/user-attachments/assets/1b3adfc4-fb78-4b66-99ef-30e80ff00441" />
 
 GMU-based fusion helped reveal modality imbalance, showing when and how each modality influenced predictions
 
