@@ -111,14 +111,10 @@ Sensitivity of models to preprocessing quality
 
 However, some patterns were observed:
 
-MRI features dominated most decisions, especially for AD cases
-
 Genetic features provided weaker but sometimes complementary signals, particularly in MCI cases
 <img width="1188" height="685" alt="image" src="https://github.com/user-attachments/assets/1b3adfc4-fb78-4b66-99ef-30e80ff00441" />
 
-GMU-based fusion helped reveal modality imbalance, showing when and how each modality influenced predictions
-
-Rather than focusing only on accuracy, this project emphasizes comparative modality analysis and interpretability.
+AD & MCI Patients (median: 0.44): Show a stronger reliance on genetic data. The model likely identifies high-risk genetic markers as primary evidence for pathology. Whereas, the normal group has  comparatively higher dependence.
 
 <br>
 <br>
