@@ -101,11 +101,9 @@ Adds an interpretability layer by exposing modality importance
 <br>
 • Results and Observations:
 
-Overall classification performance on ADNI-1 remained poor, especially for early-stage detection. This is likely due to:
+Overall classification performance on ADNI-1 remained poor. This is likely due to:
 
 Limited sample size after multimodal alignment
-
-High dimensionality of genetic data
 
 Sensitivity of models to preprocessing quality
 
@@ -113,7 +111,7 @@ However, some patterns were observed:
 <br>
 <img width="1188" height="685" alt="image" src="https://github.com/user-attachments/assets/1b3adfc4-fb78-4b66-99ef-30e80ff00441" />
 <br>
-AD & MCI Patients (median: 0.44): Show a stronger reliance on genetic data. The model likely identifies high-risk genetic markers as primary evidence for pathology. Whereas, the normal group has  comparatively higher dependence.
+AD & MCI Patients (median: 0.44): Show a stronger reliance on genetic data. The model likely identifies high-risk genetic markers as primary evidence for pathology. Whereas the normal group has  comparatively higher dependence.
 
 <br>
 <br>
@@ -125,7 +123,7 @@ Adding clinical variables (age, sex, cognitive scores) to provide context for im
 
 Exploring transformer-based cross-modal attention mechanisms
 
-Improving robustness through better preprocessing and larger cohorts
+Improving robustness through better preprocessing and larger cohorts, and also use explainable tool like SHAP, Grad-CAM.
 
 <br>
 <br>
