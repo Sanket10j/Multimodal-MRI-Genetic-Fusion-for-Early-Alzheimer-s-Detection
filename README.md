@@ -113,6 +113,8 @@ However, some patterns were observed:
 <br>
 AD & MCI Patients (median: 0.44): Show a stronger reliance on genetic data. The model likely identifies high-risk genetic markers as primary evidence for pathology. Whereas the normal group has  comparatively higher dependence.
 
+
+
 <br>
 <br>
 • Future Work:
@@ -123,7 +125,7 @@ Adding clinical variables (age, sex, cognitive scores) to provide context for im
 
 Exploring transformer-based cross-modal attention mechanisms
 
-Improving robustness through better preprocessing and larger cohorts, and also use explainable tool like SHAP, Grad-CAM.
+I identified that standard normalization is insufficient for capturing subtle structural atrophy. I am now motivated to explore robust neuroimaging pipelines, such as FastSurfer, to ensure high-fidelity inputs. This might have caused overreliance on genetic factors. I need to use methods like Grad-CAM and SHAP for further interpretability.
 
 <br>
 <br>
